@@ -1,16 +1,66 @@
-# React + Vite
+News App
+A responsive and fast News Application developed using React.js (Vite), Bootstrap, and NewsAPI. The app fetches real-time news and displays top headlines using reusable React components.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Real-time news fetched from NewsAPI
+Fully responsive UI using Bootstrap
+Fast performance with Vite
+Easy navigation with Navbar
+Clean and minimal design
+Technologies Used
+React.js
+Vite
+Bootstrap 5
+JavaScript (ES6)
+NewsAPI
+HTML & CSS
+Project Folder Structure
+news-app/ │── node_modules/ │── public/ │── src/ │ ├── assets/ │ │ └── news.png │ ├── Components/ │ │ ├── Navbar.jsx │ │ ├── NewsBoard.jsx │ │ └── NewsItem.jsx │ ├── App.jsx │ ├── App.css │ ├── index.css │ └── main.jsx │── .env │── .gitignore │── eslint.config.js │── index.html │── package.json │── package-lock.json │── vite.config.js │── README.md
 
-Currently, two official plugins are available:
+Environment Variable Setup
+Create a .env file in the root directory
+Add your NewsAPI key:
+VITE_API_KEY=
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How to Run the Project Locally
+Clone the repository:
+git clone https://github.com/codemanav16/        https://github.com/codemanav16/News_App
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Move into the project directory:
 
-## Expanding the ESLint configuration
+cd news-app
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+Open the app in your browser:
+
+http://localhost:5173
+
+ Components Overview
+
+Navbar.jsx → Displays navigation bar
+
+NewsBoard.jsx → Fetches and manages news data
+
+NewsItem.jsx → Displays individual news cards
+
+
+
+
+ Author
+
+Manav Anal
+
+GitHub: https://github.com/codemanav16/     -codemanav16
+
+Email: manavanal16@gmail.com
