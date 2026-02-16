@@ -8,19 +8,20 @@ const NewsBoard = ({ category }) => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
+        const baseUrl =
+          import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+
+        const url = `${baseUrl}/api/news?category=${category}&country=us`;
 
         const response = await fetch(url);
         const data = await response.json();
 
-        // Debug ke liye (production me bhi console me dikhega)
-        console.log("NewsAPI response:", data);
+        console.log("Proxy response:", data);
 
         if (response.ok && Array.isArray(data.articles)) {
           setArticles(data.articles);
           setError("");
         } else {
-          // agar error ya articles nahi mile
           setArticles([]);
           setError(data.message || "Failed to load news");
         }
